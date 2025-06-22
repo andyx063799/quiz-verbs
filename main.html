@@ -1,0 +1,61 @@
+<!-- Simulador de Quiz Verbs v1.0 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Verbos en Inglés</title>
+    <link href="./styles/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Verbs Simulador</h1>
+        
+        <!-- Botones para Evaluar -->
+        <div class="controls">
+            <button onclick="checkAnswers()">Verificar Respuestas</button>
+            <button onclick="clearAll()">Limpiar Todo</button>
+            <button onclick="showAnswers()">Mostrar Respuestas</button>
+            <button class="shuffle-btn" onclick="shuffleVerbs()">Mezclar Verbos</button>
+        </div>
+
+        <!-- Puntuacion -->
+        <div class="score">
+            <span id="scoreText">Puntuación: 0/189 | Progreso: 0%</span>
+        </div>
+
+        <!-- Barra de Progreso -->
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <!-- Contenedor de la Tabla de Verbos -->
+        <div class="table-container">
+            <table id="verbTable">
+                <thead>
+                    <tr>
+                        <th>INFINITIVE</th>
+                        <th>PAST</th>
+                        <th>PAST PARTICIPLE</th>
+                        <th>ESPAÑOL</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Mensaje de Exito -->
+        <div class="completion-message" id="completionMessage">
+            🎉 ¡Felicitaciones! Has completado todos los verbos correctamente. ¡Excelente trabajo! 🎉
+        </div>
+    </div>
+
+    <!-- Pie de Pagina -->
+    <div class="footer">
+        <p>© 2025 Quiz Verbs Simulador Basico | Desarrollado por Andre</p>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
