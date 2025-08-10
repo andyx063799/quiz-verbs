@@ -61,7 +61,37 @@ const verbs = [
     {infinitive: "help", past: "helped", pastParticiple: "helped", spanish: "ayudar"},
     {infinitive: "push", past: "pushed", pastParticiple: "pushed", spanish: "empujar"},
     {infinitive: "open", past: "opened", pastParticiple: "opened", spanish: "abrir"},
-    {infinitive: "sing", past: "sang", pastParticiple: "sung", spanish: "cantar"}
+    {infinitive: "sing", past: "sang", pastParticiple: "sung", spanish: "cantar"},
+    {infinitive: "save", past: "saved", pastParticiple: "saved", spanish: "salvar"},
+    {infinitive: "teach", past: "taught", pastParticiple: "taught", spanish: "enseñar" },
+    {infinitive: "bring", past: "brought", pastParticiple: "brought", spanish: "traer" },
+    {infinitive: "carry", past: "carried", pastParticiple: "carried", spanish: "cargar" },
+    {infinitive: "find", past: "found", pastParticiple: "found", spanish: "encontrar" },
+    {infinitive: "give", past: "gave", pastParticiple: "given", spanish: "dar" },
+    {infinitive: "ride", past: "rode", pastParticiple: "ridden", spanish: "montar" },
+    {infinitive: "hear", past: "heard", pastParticiple: "heard", spanish: "oir" },
+    {infinitive: "rain", past: "rained", pastParticiple: "rained", spanish: "llover" },
+    {infinitive: "spend", past: "spent", pastParticiple: "spent", spanish: "gastar" },
+    {infinitive: "learn", past: "learned", pastParticiple: "learned", spanish: "aprender" },
+    {infinitive: "know", past: "knew", pastParticiple: "known", spanish: "saber" },
+    {infinitive: "paint", past: "painted", pastParticiple: "painted", spanish: "pintar" },
+    {infinitive: "buy", past: "bought", pastParticiple: "bought", spanish: "comprar" },
+    {infinitive: "dance", past: "danced", pastParticiple: "danced", spanish: "bailar" },
+    {infinitive: "try", past: "tried", pastParticiple: "tried", spanish: "tratar" },
+    {infinitive: "wear", past: "wore", pastParticiple: "worn", spanish: "vestir" },
+    {infinitive: "return", past: "returned", pastParticiple: "returned", spanish: "regresar" },
+    {infinitive: "forget", past: "forgot", pastParticiple: "forgotten", spanish: "olvidar" },
+    {infinitive: "forgive", past: "forgave", pastParticiple: "forgiven", spanish: "perdonar" },
+    {infinitive: "close", past: "closed", pastParticiple: "closed", spanish: "cerrar" },
+    {infinitive: "build", past: "built", pastParticiple: "built", spanish: "construir" },
+    {infinitive: "arrange", past: "arranged", pastParticiple: "arranged", spanish: "arreglar" },
+    {infinitive: "do", past: "did", pastParticiple: "done", spanish: "hacer" },
+    {infinitive: "create", past: "created", pastParticiple: "created", spanish: "crear" },
+    {infinitive: "organize", past: "organized", pastParticiple: "organized", spanish: "organizar" },
+    {infinitive: "love", past: "loved", pastParticiple: "loved", spanish: "amar" },
+    {infinitive: "taste", past: "tasted", pastParticiple: "tasted", spanish: "saber (sabor) / probar" },
+    {infinitive: "like", past: "liked", pastParticiple: "liked", spanish: "gustar" },
+    
 ];
 
 let shuffledVerbs = [];
@@ -128,6 +158,11 @@ function checkAnswer(userAnswer, correctAnswer) {
     // Para "get up" (gotten up puede ser got up en algunos contextos)
     if (correct === "gotten up") {
         return normalized === "gotten up" || normalized === "got up";
+    }
+
+    // Para "learn" permitir variaciones
+    if (correct === "learnt/learned") {
+        return normalized === "learnt/learned" || normalized === "learnt" || normalized === "learned";
     }
 
     return normalized === correct;
