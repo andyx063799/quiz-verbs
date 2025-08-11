@@ -72,6 +72,7 @@ const verbs = [
     {infinitive: "hear", past: "heard", pastParticiple: "heard", spanish: "oir" },
     {infinitive: "rain", past: "rained", pastParticiple: "rained", spanish: "llover" },
     {infinitive: "spend", past: "spent", pastParticiple: "spent", spanish: "gastar" },
+    {infinitive: "erase", past: "erased", pastParticiple: "erased", spanish: "borrar" },
     {infinitive: "learn", past: "learned", pastParticiple: "learned", spanish: "aprender" },
     {infinitive: "know", past: "knew", pastParticiple: "known", spanish: "saber" },
     {infinitive: "paint", past: "painted", pastParticiple: "painted", spanish: "pintar" },
