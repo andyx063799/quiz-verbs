@@ -85,7 +85,7 @@ const verbs = [
     {infinitive: "close", past: "closed", pastParticiple: "closed", spanish: "cerrar" },
     {infinitive: "build", past: "built", pastParticiple: "built", spanish: "construir" },
     {infinitive: "arrange", past: "arranged", pastParticiple: "arranged", spanish: "arreglar" },
-    {infinitive: "do", past: "did", pastParticiple: "done", spanish: "hacer" },
+    {infinitive: "do", past: "did", pastParticiple: "done", spanish: "hacer (realizar)" },
     {infinitive: "create", past: "created", pastParticiple: "created", spanish: "crear" },
     {infinitive: "organize", past: "organized", pastParticiple: "organized", spanish: "organizar" },
     {infinitive: "love", past: "loved", pastParticiple: "loved", spanish: "amar" },
